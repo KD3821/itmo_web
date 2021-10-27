@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Самостоятельная работа №3.1</title>
+        <meta charset="UTF-8">
+        <style>
+        label {
+            width: 150px;
+            padding-right: 20px;
+            display: inline-block;
+        }
+        </style>
+    </head>
+    <body >
+        <h2>Продажа квартир КВАДРИТО</h2> 
+        <p>Заполните форму ниже о квартире, которую хотите выставить на продажу:</p>
+        <form method="GET" action="SRSWEB_3_1.html">
+            <label for="gorod">Город:</label> 
+            <select id="gorod" name="city">
+                <option value="-1">Выбирете город для продажи___________________</option>
+                <option value="0">Москва</option>
+                <option value="1">Санкт-Петербург</option>
+                <option value="2">Новосибирск</option>
+                <option value="3">Воронеж</option>
+                <option value="4">Вологда</option>
+                <option value="5">Магадан</option>
+            </select><br>
+            <label for="m_0">Материал здания:</label>
+            <input type="checkbox" name="type_material" id="m_0" value="0">Кирпич<br>
+            <label for="m_1"></label>
+            <input type="checkbox" name="type_material" id="m_1" value="1">Блоки<br>
+            <label for="m_2"></label>
+            <input type="checkbox" name="type_material" id="m_2" value="2">Монолит<br>
+            <label for="m_3"></label>
+            <input type="checkbox" name="type_material" id="m_3" value="3">Панель<br>
+            <label for="m_4"></label>
+            <input type="checkbox" name="type_material" id="m_4" value="4">Дерево<br>
+            <label for="s_total">Общая площадь (м<sup>2</sup>)</label>
+            <input type="text" id="s_1" name="basic_m_start" placeholder="ОТ" size="21">
+            <input type="text" name="basic_m_end" placeholder="ДО" size="21"><br>
+            <label for="s_kitchen">Площадь кухни (м<sup>2</sup>)</label>
+            <input type="text" id="s_kitchen" name="kitchen_m_start" placeholder="ОТ" size="21">
+            <input type="text" name="kitchen_m_end" placeholder="ДО" size="21"><br>
+            <label for="s_live">Жилая площадь (м<sup>2</sup>)</label>
+            <input type="text" id="s_live" name="live_m_start" placeholder="ОТ" size="21">
+            <input type="text" name="live_m_end" placeholder="ДО" size="21"><br>
+            <label for="s_years">Год постройки</label>
+            <input type="text" id="s_years" name="years_start" placeholder="ОТ" size="21">
+            <input type="text" name="years_end" placeholder="ДО" size="21"><br>
+            <label for="s_level">Этаж</label>
+            <input type="text" id="s_years" name="level_start" placeholder="ОТ" size="21">
+            <input type="text" name="level_end" placeholder="ДО" size="21"><br>
+            <label for="last"></label>
+            Не последний
+            <input type="checkbox" id="last" name="not_end"><br>
+            <label for="s_dom">Этажей в доме</label>
+            <input type="text" id="s_years" name="level_start" placeholder="ОТ" size="21">
+            <input type="text" name="levle_end" placeholder="ДО" size="21"><br>
+            <label for="metro">До метро (по карте):</label> 
+            <select id="metro" name="distance">
+                <option value="-1">Выбирете расстояние___________________</option>
+                <option value="500m">До 7 минут пешком (500 метров)</option>
+                <option value="1000m">До 15 минут пешком (1 км.)</option>
+                <option value="1500m">До 21 минут пешком (1,5 км.)</option>
+                <option value="3000m">До 40 минут пешком (3 км.)</option>
+                <option value="5000m">До 1 часа пешком (5 км.)</option>
+            </select><br>
+            <label for="s_1">Продавец</label>
+            <input type="radio" name="saler" id="s_1" value="0">Не важно<br>
+            <label for="s_2"></label>
+            <input type="radio" name="saler" id="s_2" value="1">Агентство<br>
+            <label for="s_3"></label>
+            <input type="radio" name="saler" id="s_3" value="2">Собственник<br>
+            <input type="submit" value="Показать предложения">
+            <input type="reset" value="Сбросить фильтры">
+        </form>
+    </body>
+</html>
