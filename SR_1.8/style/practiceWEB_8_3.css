@@ -1,0 +1,38 @@
+body {
+    background-color: #cecece;
+    padding: 0;
+}
+div {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 10px;
+    transition: 1s; /* длительность перехода 1 сек */
+}
+.container {
+    width: 100%;
+    height: 100%;
+}
+.container:hover div {
+    left: 500px; /* расстояние от левого края исходного положения элемента, не включая отступ, поле и ширину рамки, до левого края текущего положения элемента */
+}
+.ease {
+    background-color: blue;
+    transition-timing-function: ease; /*устанавливаем кривую скорости еффекта перехода с медленным началом, затем быстрым, а затем медленным завершением*/
+}
+.linear {
+    background-color: lime;
+    transition-timing-function: linear; /* устанавливаем кривую скорости еффекта перехода с одинаковой скоростью от начала до конца */
+}
+.ease-in {
+    background-color: mediumseagreen;
+    transition-timing-function: ease-in; /* устанавливаем кривую скорости еффекта перехода при медленном старте */
+}
+.ease-out {
+    background-color: orangered;
+    transition-timing-function: ease-out; /* устанавливаем кривую скорости еффекта перехода с медленным концом */
+}
+.ease-in-out {
+    background-color: darkviolet;
+    transition-timing-function: ease-in-out; /* устанавливаем кривую скорости еффекта перехода с медленным началом и концом */
+}

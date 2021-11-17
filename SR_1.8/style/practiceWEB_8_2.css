@@ -1,0 +1,32 @@
+body {
+    background-color: #cecece;
+    padding: 32px;
+}
+button {
+    margin: 25px 15px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid lime;
+    padding: 15px 35px;
+}
+button:hover {
+    outline: 1px solid white;
+    outline-offset: -2px;
+    cursor: pointer;
+}
+.button1 {
+    background-color: #2563e9;
+    transition: 1s; /* длительность перехода 1 сек */
+}
+.button1:hover {
+    background-color: #4478e9;
+}
+.button2 {
+    background-color: #2563e9;
+    transition: 1s; /* длительность перехода 1 сек */
+    transition-property: background; /* имя стилевого свойства, которое будет отслеживаться для создания эффекта перехода */
+}
+.button2:hover {
+    background-color: #e95ad1;
+    outline: none;
+}

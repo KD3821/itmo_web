@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    perspective: 900px; /* определяем расстояние от плоскости экрана до точки сходимости линий  */
+    perspective-origin: center -5em; /* задаем координаты точки сходимости линий - центральная точка */
+}
+.container {
+    transform-style: preserve-3d;  /* задаем отображение дочерних элементов в 3D-пространстве */
+    animation: rotate 10s infinite linear;  /* имя анимации | продолжительность анимации 10 сек | бесконечная продожительность  | еффект перехода с одинаковой скоростью от начала до конца  */
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left:250px;
+}
+@keyframes rotate {
+    100% {transform: rotate3d(0, 1, 0, 360deg);}  /* задаем положение элемента в конце анимации - поворот элемента на 360 градусов в трёхмерном пространстве вокруг оси Y  */
+}
+div.side {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    position: absolute;
+    outline: 1px solid #000;
+    outline-offset: 25px;
+    opacity: 0.8;
+}
+.front {
+    background: url("images/pic6.png");
+}
+.left {
+    transform: translateX(-100px) rotateY(90deg) translateX(100px); /* сдвигаем элемент по горизонтали на указанное значение | Поворот элемента на заданный угол по вертикали |  сдвигаем элемент по горизонтали на указанное значение */
+    background: url("images/pic1.png");
+}
+.right {
+    transform: translateX(100px) rotateY(90deg) translateX(100px); /* сдвигаем элемент по горизонтали на указанное значение | Поворот элемента на заданный угол по вертикали |  сдвигаем элемент по горизонтали на указанное значение */
+    background: url("images/pic2.png");
+}
+.up {
+    transform: translateY(-100px) rotateX(90deg) translateY(-100px); /* сдвигаем элемент по вертикали на указанное значение | Поворот элемента на заданный угол по горизонтали |  сдвигаем элемент по вертикали на указанное значение */
+    background: url("images/pic3.png");
+}
+.down {
+    transform: translateY(100px) rotateX(90deg) translateY(-100px); /* сдвигаем элемент по вертикали на указанное значение | Поворот элемента на заданный угол по горизонтали |  сдвигаем элемент по вертикали на указанное значение */
+    background: url("images/pic4.png");
+}
+.back {
+    transform: translateZ(-200px);  /* cдвигаем элемент по оси Z на указанное значение */
+    background: url("images/pic5.png");
+}

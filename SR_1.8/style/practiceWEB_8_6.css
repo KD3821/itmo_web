@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.wrap {
+    width: 200px;
+    height: 150px;
+    outline: 1px solid #000;
+    display: inline-block;
+    margin: 35px 50px;
+}
+.wrap > div {
+    width: 200px;
+    height: 150px;
+    background: rgba(144, 235, 242, 0.5);
+    display: inline-block;
+    position: relative;
+    z-index: 2; /* размещение элемента по z-оси */
+    transition: transform 1s;  /* длительность перехода 1 сек для стилевого свойства transform */
+}
+.wrap > div > span {
+    position: absolute;
+    top:45%;
+    width: 100%;
+    text-align: center;
+}
+.translateX:hover {
+    transform: translateX(50px); /* сдвигаем элемент по горизонтали на указанное значение */
+}
+.translateY:hover {
+    transform: translateY(50px); /* сдвигаем элемент по вертикали на указанное значение */
+}
+.translate:hover {
+    transform: translate(50px, 50px); /* сдвигаем элемент по горизонтали и вертикали на указанное значение */
+}
+.scaleX:hover {
+    transform: scaleX(-1); /* задаем масштаб элемента по горизонтали */
+}
+.scaleY:hover {
+    transform: scaleY(-1); /* задаем масштаб элемента по вертикали */
+}
+.scaleX15:hover {
+    transform: scaleX(1.5); /* задаем масштаб элемента по горизонтали */
+}
+.scale:hover {
+    transform: scale(1.5, 0.5); /* задаем масштаб элемента по горизонтали и вертикали */
+}
+.rotate:hover {
+    transform: rotate(360deg); /* задаем поворот элемента на заданный угол относительно точки трансформации */
+}
+.skewX:hover {
+    transform: skewX(45deg); /* наклоняем элемент на заданный угол по вертикали */
+}
+.skewY:hover {
+    transform: skewY(-45deg); /* наклоняем элемент на заданный угол по горизонтали */
+}
+.skew:hover {
+    transform: skew(-20deg, 20deg); /* наклоняем элемент враво и вниз */
+}
+.matrix:hover {
+    transform: matrix(1.5,0,0.5,1.2,50,0); /* задаем коэффициенты для матрицы преобразований */
+}

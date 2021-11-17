@@ -1,0 +1,23 @@
+@keyframes bouncing{
+    0% { left: 50px; bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5);} /* положение элемента на момент начала анимации */
+    50% { left: 150px; bottom: 250px; box-shadow: 0 0 5px rgba(0,0,0,0.5);} /* положение элемента на середине анимации */
+    100%{ left: 350px; bottom: 0px; box-shadow: 0 50px 50px rgba(0,0,0,0.1);} /* положение элемента в конце анимации */
+   }
+div {
+    animation: bouncing 1s cubic-bezier(.1,.25,.1,1) 0s infinite alternate both; /* имя анимации | продолжительность анимации 1 сек| функция движения в виде кривой Безье|  время ожидания перез запуском 0сек| бесконечная продожительность | сначала вперед потом назад| применяются оба правила, как для forwards, так и для backwards */
+    background: lightslategrey;
+    display: block;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    border-radius: 150px;
+    position: relative;
+    margin-top: 250px;
+}
+div:before {
+    content: "Ball";
+    display: inline-block;
+    margin-top: 40px;
+    color: white;
+    font-size: 2rem;
+}
