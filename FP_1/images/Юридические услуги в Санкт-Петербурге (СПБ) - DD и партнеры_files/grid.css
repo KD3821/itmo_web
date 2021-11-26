@@ -1,0 +1,175 @@
+.col-12 {
+    width: 100%;
+}
+.col-11 {
+    width: 91.66666667%;
+}
+.col-10 {
+    width: 83.33333333%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-8 {
+    width: 66.66666667%;
+}
+.col-7 {
+    width: 58.33333333%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-5 {
+    width: 41.66666667%;
+}
+.col-4 {
+    width: 33.33333333%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-2 {
+    width: 16.66666667%;
+}
+.col-1 {
+    width: 8.33333333%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .container {
+        width: 319px;
+    }
+    .i-container {
+        height: 580px;
+        border-left: 1px solid black;
+    }
+    header {
+        width: 317px;
+        float: none;
+    }
+    .logo {
+        width: 50%;
+    }
+    footer .schedule {
+        display: none;
+    }
+    .side-menu {
+        display: inline;
+        float: none;
+        border: none;
+    }
+    .side-menu > ul.hr {
+        margin: 0;
+    }
+    .side-menu > ul.hr > li  {
+        display: inline;
+        line-height: 2;
+        margin-right: 5px;
+        white-space: pre;
+        text-align: left;
+        border: 1px solid black
+    }
+    section {
+        float: none;
+        border: none;
+        width: 100%;
+    }
+    .side-form {
+        float: none;
+        display: inline;
+    }
+    .side-form > form {
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    .share-copy, .schedule, .contacts-f {
+        font-size: x-small;
+    }
+    .table-main td {
+        width: 80%;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .container {
+        width: 480px;
+    }
+    .i-container {
+        height: 580px;
+        border-left: 1px solid black;
+    }
+    header {
+        width: 478px;
+    }
+    
+    .side-menu {
+        display: inline;
+        float: none;
+        border: none;
+    }
+    .side-menu > ul.hr {
+        margin: 0;
+    }
+    .side-menu > ul.hr > li  {
+        display: inline;
+        line-height: 2;
+        margin-right: 5px;
+        white-space: pre;
+        text-align: left;
+        border: 1px solid black
+    }
+    section {
+        float: none;
+        border: none;
+        width: 100%;
+    }
+    .side-form {
+        float: none;
+        display: inline;
+    }
+    .side-form > form {
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    .share-copy, .schedule, .contacts-f {
+        font-size: x-small;
+    }
+    /* .wrapper {
+        border: none;
+    } */
+    
+}
+@media (min-width: 768px) {
+    .container {
+        width: 767px;
+    }
+    .i-container {
+        height: 580px;
+    }
+    header contacts, phone {
+        font-size: larger;
+    }
+}   
+@media (min-width: 992px) {
+    .container {
+        width: 991px;
+    }
+    .i-container {
+        height: 362px;
+    }
+    header contacts, phone {
+        font-size: larger;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1199px;
+    }
+    .i-container {
+        height: 252px;
+    }
+    header {
+        width: 1197px;
+    }
+    header contacts, phone {
+        font-size: larger;
+    }
+}
