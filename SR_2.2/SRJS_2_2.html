@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 2.2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            let arrOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            let odd=[], even=[];
+
+            // for (i=0; i < arrOfNumbers.length; i++) {
+            //     if (arrOfNumbers[i]%2==0) {
+            //         even.push(arrOfNumbers[i]);
+            //     } else {
+            //         odd.push(arrOfNumbers[i]);
+            //     }
+            // }
+           
+           
+            // for (i in arrOfNumbers) {
+            //     if (arrOfNumbers[i]%2==0) {
+            //         even.push(arrOfNumbers[i]);
+            //     } else {
+            //         odd.push(arrOfNumbers[i]);
+            //     }
+            // }
+
+            let x;
+            for (x of arrOfNumbers) {
+                if (x%2==0) {
+                    even.push(x);
+                } else {
+                    odd.push(x);
+                }
+            }
+
+            console.log(`Массив нечетных чисел: ${odd}`);
+            console.log(`Массив четных чисел: ${even}`);
+        }
+    </script>
+</body>
+</html>

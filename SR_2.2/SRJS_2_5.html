@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 2.5</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            let beforeArr=[], afterArr=[];
+            let index=0;
+            let i=10, j=10;
+
+            do {
+                beforeArr.push(++i); 
+                /* сначала значение i увеличивается на 1 и затем добавляется в конец массива, поэтому 
+                по завершению цикла первым элементом массива будет "11" - последним "15" */
+                afterArr.push(j++);
+                /* сначала значение i добавляется в конец массива и затем увеличивается на 1, поэтому 
+                по завершению цикла первым элементом массива будет "10" - последним "14" */
+                index++;
+            } while (index < 5);
+            console.log(beforeArr); 
+            console.log(afterArr); 
+        }
+    </script>
+</body>
+</html>
