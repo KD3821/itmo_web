@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3.5</title>
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            let ask = (question, yes, no) => {
+                if (confirm(question)) yes()
+                else no();
+            }
+
+            let agree = () => alert("Вы согласились.");
+            let cancel = () => alert("Вы отменили выполнение.");
+            
+            ask("Вы согласны?", agree, cancel);
+        }
+    </script>
+</body>
+</html>
