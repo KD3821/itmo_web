@@ -19,9 +19,9 @@
             };
             city['printProperties'] = function () {
                 let tmp = [];
-                for (let key in city) {
-                    if (typeof city[key] != typeof city['getName']) {
-                        tmp.push(key +'='+city[key]);
+                for (let key in this) {
+                    if (typeof this[key] !== 'function') {
+                        tmp.push(key +'='+this[key]);
                     };
                 };
                 return tmp.join('/')+'/';

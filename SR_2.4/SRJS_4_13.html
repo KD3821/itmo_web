@@ -12,12 +12,12 @@
 
             let names = "John, David, Jennifer, Ronald, Diana, Kathryn";
 
-            function getSplitArr(str) {
-                let arr = str.split(', ')
+            function getSplitArr(str, splt) {
+                let arr = str.split(splt)
                 return arr;
             };
 
-            console.log(getSplitArr(names));
+            console.log(getSplitArr(names, ", "));
             console.log(names);
         }
     </script>

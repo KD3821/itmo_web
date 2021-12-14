@@ -13,11 +13,11 @@
             myStr = 'LetMyPoepleGo';
 
             function getSubstring(str, start, end) {
-                let result = str.substring(start, end+1);
+                let result = str.substring(start, end);
                 return result;
             };
 
-            console.log(getSubstring(myStr, 3, 6));
+            console.log(getSubstring(myStr, 3, 11));
 
             let EmailAddress = 'stanislav_sivin@mail.ru';
             let result = getSubstring(EmailAddress, EmailAddress.indexOf('@')+1, EmailAddress.length);
