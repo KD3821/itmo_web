@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 4.7</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            let city = {};
+
+            city['name'] = "Город N";
+            city['population'] = '10 млн';
+            city['getName'] = function () {
+                return this.name;
+            };
+
+            console.log(city.getName());
+            console.log(typeof city.getName);
+        }
+    </script>
+</body>
+</html>

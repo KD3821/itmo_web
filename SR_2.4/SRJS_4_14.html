@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 4.14</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            myStr = 'LetMyPoepleGo';
+
+            function getSubstring(str, start, end) {
+                let result = str.substring(start, end+1);
+                return result;
+            };
+
+            console.log(getSubstring(myStr, 3, 6));
+
+            let EmailAddress = 'stanislav_sivin@mail.ru'
+            let result = getSubstring(EmailAddress, EmailAddress.indexOf('@')+1, EmailAddress.length);
+
+            alert(result);
+        }
+    </script>
+</body>
+</html>

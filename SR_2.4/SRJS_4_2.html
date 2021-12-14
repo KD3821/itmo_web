@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 4.2. Вывод массива без undefined</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+            //Испрользовал window,products как в задании 4.1
+
+            let a;
+            
+            window.products = [];
+            window.products[0] = "Блины";
+            window.products[1] = "Квас";
+            window.products[2] = "Пельмени";
+            window.products[3] = "Икра";
+            window.products[4] = a;
+            window.products[5] = "Вареники";
+            
+            function printProduct(arr) {
+                let tmp = "";
+                for (let i=0; i<arr.length; i++) {
+                    if (arr[i] !== undefined) {
+                        tmp = tmp + arr[i] + '<br>'; 
+                    };
+                };
+                document.write(tmp);
+            };
+
+            printProduct(products);
+            console.log(products);
+            
+        }
+    </script>
+</body>
+</html>

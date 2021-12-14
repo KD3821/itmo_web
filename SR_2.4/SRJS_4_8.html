@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 4.8</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            let city = {};
+
+            city['name'] = "Город N";
+            city['population'] = '10 млн';
+            city['getName'] = function () {
+                return this.name;
+            };
+            city['printProperties'] = function () {
+                let tmp = [];
+                for (let key in city) {
+                    if (typeof city[key] != typeof city['getName']) {
+                        tmp.push(key +'='+city[key]);
+                    };
+                };
+                return tmp.join('/')+'/';
+            };
+
+            console.log(city.printProperties());
+        }
+    </script>
+</body>
+</html>

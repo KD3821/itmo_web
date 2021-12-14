@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 4.11</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+            let warning = "Index is out of range!";
+            let name = "Станислав";
+
+            function getChar(str, index) {
+                if (index < str.length && index >= 0) {
+                    return(str.charAt(index));
+                } else {
+                    document.write(warning);
+                };
+            };
+            console.log(getChar(name, 5));
+        }
+    </script>
+</body>
+</html>

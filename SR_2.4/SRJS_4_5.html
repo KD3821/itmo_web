@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 4.5 Сортировка массива пользовательской функцией</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+            
+            let arr = ['Книги', 'Фильмы', 'Видео', undefined, 'Контакты', 'Поисковик', 1, 5, 3, 2];
+            document.write(arr.join("|"));
+            //Получаем: Книги|Фильмы|Видео||Контакты|Поисковик|1|5|3|2
+            //Видео||Контакты - ужасно!
+            document.write("<br>");
+            function compareElements(a, b) {
+                if (((typeof a) == 'string') && ((typeof b) == 'number')) return 1;
+                if (((typeof a) == 'number') && ((typeof b) == 'string')) return -1;
+                if (((typeof a) == 'string') && ((typeof b) == 'string') && (a > b)) return -1; //изменили знак
+                if (((typeof a) == 'string') && ((typeof b) == 'string') && (a < b)) return 1; //изменили знак
+                if (((typeof a) == 'string') && ((typeof b) == 'string') && (a == b)) return 0;
+                if (((typeof a) == 'number') && ((typeof b) == 'number') && (a > b)) return -1; //изменили знак
+                if (((typeof a) == 'number') && ((typeof b) == 'number') && (a < b)) return 1; //изменили знак
+                if (((typeof a) == 'number') && ((typeof b) == 'number') && (a == b)) return 0;
+            }
+            let newArr = arr.filter(item => {if (item !== undefined) return item;}).sort(compareElements);
+            document.write(newArr.join("|"));
+            //1|2|3|5|Видео|Книги|Контакты|Поисковик|Фильмы - так было
+            
+        }
+    </script>
+</body>
+
+</html>

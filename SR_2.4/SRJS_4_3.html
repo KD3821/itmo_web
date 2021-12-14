@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 4.3. Объединение массива</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            let products = [];
+
+            products[0] = "Блины";
+            products[1] = "Квас";
+            products[2] = "Пельмени";
+            products[3] = "Икра";
+           
+            function printProduct(arr) {
+                let tmpArr = [];
+                for (let i=0; i<arr.length; i++) {
+                    if (arr[i] != undefined) {
+                        tmpArr.push(arr[i]) + '<br>'; 
+                    };
+                };
+                tmpArr = tmpArr.join('/')
+                return tmpArr;
+            };
+            
+            document.write(printProduct(products));
+            // document.write('<pre>');
+            // document.writeln(printProduct(products));
+            // document.write('</pre>');
+           
+        }   
+    </script>
+</body>
+</html>
