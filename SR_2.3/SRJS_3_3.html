@@ -24,7 +24,7 @@
             function Wages(oldWages, coefficientWages) {
                 let newWages = oldWages * coefficientWages;
                 let date=document.getElementById("date").innerHTML;
-                document.getElementById("newW").innerHTML="Ваша новая зарплата "+newWages;
+                document.getElementById("newW").innerHTML="Ваша новая зарплата $"+newWages+" на "+date;
             }
             function processingForm() {
                 let oldW=parseInt(document.getElementById("oldW").value, 10);
