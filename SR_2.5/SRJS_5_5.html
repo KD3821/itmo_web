@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 5.5</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="myDiv" style="background-color:red; height:300px; font-family: Arial,Arial, Helvetica, sans-serif">Текст в блоке</div>
+    <input type="text" value=".myDiv" id="elem">
+    <input type="text" value="background-color" id="style">
+    <input type="text" value="#ccc" id="value">
+    <input type="button" value="Изменить стиль" onclick="changeStyle()">
+
+    <script>
+        {
+            "use strict";
+
+            function changeStyle() {
+                let myValue = document.querySelector('#value').value;
+                let myStyle = document.querySelector('#style').value;
+                let myElement = document.querySelector('#elem').value;
+                document.querySelector(myElement).style[myStyle] = myValue;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 5.7 Получение отдельных характеристик даты</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            function getDateProperties(milliseconds) {
+                let date = new Date(milliseconds);
+                let result = {};
+                result['day'] = date.getDate();
+                result['month'] = date.getMonth()+1;
+                result['year'] = date.getFullYear();
+                result['hour'] = date.getHours();
+                result['minutes'] = date.getMinutes();
+                result['seconds'] = date.getSeconds();
+
+
+                return result;
+            }
+
+            console.log(getDateProperties(1628414191622));
+        }
+    </script>
+</body>
+</html>

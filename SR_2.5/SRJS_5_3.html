@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 5.3. Демонстрация метода setInterval()</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <p id='cont'></p>
+    <script>
+        {
+            "use strict";
+
+            let counter = 10;
+            let countdown = () => {
+                document.getElementById('cont').innerHTML=counter--;
+                if (counter < 0) {
+                    window.clearInterval(interval_id);
+                }
+            };
+            let interval_id = window.setInterval(countdown, 1000);
+        }
+    </script>
+</body>
+</html>

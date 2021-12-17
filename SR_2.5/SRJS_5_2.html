@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 5.2. Отмена работы таймера setTimeOut</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            let firstTimer = window.setTimeout(()=> {alert("Отработал Первый!");}, 2000);
+            let secondTimer = window.setTimeout(()=> {alert("Отработал Второй!");}, 4000);
+
+            window.clearTimeout(firstTimer);
+        }
+    </script>
+</body>
+</html>

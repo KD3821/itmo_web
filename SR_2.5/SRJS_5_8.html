@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 5.8</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            function getDateProperties(milliseconds) {
+                let date = new Date(milliseconds);
+                let result = {};
+                result['day'] = date.getDate();
+                result['month'] = date.getMonth()+1;
+                result['year'] = date.getFullYear();
+                result['hour'] = date.getHours();
+                result['minutes'] = date.getMinutes();
+                result['seconds'] = date.getSeconds();
+                return result;
+            }
+
+            function getNameOfMonth(month) {
+                switch (month) {
+                    case 0: 
+                        return "Январь";
+                    case 1: 
+                        return "Февраль";
+                    case 2: 
+                        return "Март";
+                    case 3: 
+                        return "Апрель";
+                    case 4: 
+                        return "Май";
+                    case 5: 
+                        return "Июнь";
+                    case 6: 
+                        return "Июль";
+                    case 7: 
+                        return "Август";
+                    case 8: 
+                        return "Сентябрь";
+                    case 9: 
+                        return "Октябрь";
+                    case 10: 
+                        return "Ноябрь";
+                    case 11: 
+                        return "Декабрь"; 
+                }
+            }
+
+            function printPrettyDate(neededDate) {
+                let date = getDateProperties(neededDate);
+                let str = "";
+                str = `${date.day} ${getNameOfMonth(date.month)} ${date.year}, `;
+                str = str+ `${date.hour}:${date.minutes}:${date.seconds}`;
+                return str;
+            }
+
+            document.write(printPrettyDate(1628414191622));
+        }
+    </script>
+</body>
+</html>
