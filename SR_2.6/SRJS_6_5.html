@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 6.5. Добавление элементов на страницу</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <button onclick="buildNames(['Андрей', 'Дима', 'Нина', 'Света', 'Стас'], 'list')">Создать</button>
+    <ul class="list"></ul>
+    <script>
+        {
+            "use strict";
+
+            function buildNames(myList, myClassName) {
+                let pNode = document.getElementsByClassName(myClassName)[0];
+                if (pNode.nodeType == 1) {                      // в вебинаре Станислав использует (pNode !== undefined)
+                    myList.forEach ( (item) => {
+                        let node = document.createElement('li');
+                        node.innerText = item;
+                        pNode.append(node);
+                    });
+                    console.log(pNode)
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
