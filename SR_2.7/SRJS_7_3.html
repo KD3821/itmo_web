@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 7.3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <button type="button" onclick="getCookies();">Do it!</button>
+    <script>
+        {
+            "use script";
+
+            // var document.cookie = "login=stanislav; password=pass; domain=localhost";
+
+            function getCookies() {
+                let end, val, nm;
+                let eql = 0;
+                let result = [];
+                let obj = {};
+                if (document.cookie.length>0) {
+                    while (document.cookie.indexOf('=', eql) != -1) {
+                        eql = document.cookie.indexOf('=', eql)
+                        if (document.cookie.indexOf(';', eql)>0) {
+                            end = document.cookie.indexOf(';', eql);
+                        } else {
+                            end = document.cookie.length;
+                        }
+                        val = document.cookie.substring(eql+1, end);
+                        for (let i=eql; i>-1; --i) {
+                            if (document.cookie[i] == ';') {
+                                nm = document.cookie.substring(i+2, eql);
+                                break;
+                            } else if (i == 0) {
+                                nm = document.cookie.substring(i, eql);
+                                break;
+                            } else {
+                                continue;
+                            }
+                        }
+                        obj[nm] = val;
+                        result.push(obj);
+                        eql += 1;
+                        obj = {};
+                    }
+                }
+                console.log(result);
+                return result;
+            }
+        }
+    </script>
+</body>
+</html>

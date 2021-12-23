@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 7.5 Форма авторизации</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .formAuth, .greetings {
+            padding: 16px;
+            color: lime;
+        }
+        .formAuth label {
+            font-size: 18px;
+            color: mediumpurple;
+        }
+        .formAuth input[type="text"] {
+            font-size: 16px;
+            margin: 10px 0;
+            color:navy
+        }
+        .formAuth button {
+            font-size: 16px;
+            padding: 7px 10px;
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="greetings" style="display: none;">
+        <p>Добро пожаловать, <span></span>!</p>
+        <button class="logOut" onclick="logout()">Выйти</button>
+    </div>
+    <div class="formAuth" style="display: block;">
+        <label>
+            Логин:<br>
+            <input type="text" placeholder="Введите логин" id="login">
+        </label>
+        <label><br>
+            Пароль:<br>
+            <input type="text" placeholder="Введите пароль" id="password">
+        </label><br>
+        <button class="logIn" onclick="login()">Войти</button>
+        <p class="info"></p>
+    </div>
+    <p class="saveCookie"></p>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
+    <script src=script_7_5.js></script>
+</body>
+</html>
