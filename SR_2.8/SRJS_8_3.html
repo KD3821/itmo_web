@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>8.3 Динамическое изменение значений элементов списка</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .typeOfVehicles label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form name="cars" action="http://www.jimkeogh.com" method="post">  
+        <select name="OptionList" size="5">
+            <option value=1>Classic</option>
+            <option value=2>Police Cruiser</option>
+        </select>
+        <div class="typeOfVehicles">
+            <label><input type="radio" name="vehicles" checked=true value=1 onclick="ResetOptionList(this.value);">Motorcycles</label>
+            <label><input type="radio" name="vehicles" value=2 onclick="ResetOptionList(this.value);">Cars</label>
+        </div>
+        <input type="submit" name="Submit" value="Submit">
+        <input type="reset" name="Reset" value="Reset">
+    </form>
+    <script>
+        {
+            "use strict";
+
+            function ResetOptionList(ElementValue) {
+                let cars = document.forms.cars;
+                let listCars = {
+                    moto:{ 0:{name:"Classic", value:1}, 1:{name:"Police Cruiser", value:2}, 2:{name:"Harley Davidson", value:3}},
+                    cars:{ 0:{name:"Ford", value:1}, 1:{name:"Chevy", value:2}}
+                }
+                if (ElementValue == 1) {
+                    cars.OptionList.innerHTML = "";
+                    buildOptions(listCars.moto, cars.OptionList);
+                }
+                if (ElementValue == 2) {
+                    cars.OptionList.innerHTML = "";
+                    buildOptions(listCars.cars, cars.OptionList);
+                }
+            }
+
+            function buildOptions(objData, root) {
+                for (let item of Object.values(objData)){  
+                    let option = document.createElement('option');
+                    option.value = item['value'];
+                    option.innerText = item['name'];
+                    root.appendChild(option);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

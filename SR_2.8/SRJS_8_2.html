@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>8.2 Доступ к атрибутам объектов</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form action="http://www.ya.ru" method="post" name="order">
+        <label>Имя: <br><input type="text" name="Fname"></label><br>
+        <label>Фамилия: <br><input type="text" name="Lname"></label><br>
+        <label>Email: <br><input type="text" name="Email"></label><br>
+        <button id="sendForm">Отправить</button>
+    </form>
+    <p class="valueOfEmail"></p>
+    <script>
+        {
+            "use script";
+
+            function display(evt) {
+                evt.preventDefault();
+                document.getElementsByClassName('valueOfEmail')[0].innerHTML = "Значение: "+ document.forms.order.Email.value
+            }
+
+            document.getElementById('sendForm').addEventListener('click', display);
+        }
+    </script>
+</body>
+</html>
