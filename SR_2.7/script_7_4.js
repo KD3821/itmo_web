@@ -20,4 +20,4 @@ let login = () => {
     
     getCookies();
     
-}
+};

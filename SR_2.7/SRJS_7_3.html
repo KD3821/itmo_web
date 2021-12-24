@@ -14,6 +14,10 @@
             // var document.cookie = "login=stanislav; password=pass; domain=localhost";
             // Надо было как-то использовать encodeURIComponent? Не понял как.
 
+            document.cookie = encodeURIComponent('login') + '=' + encodeURIComponent('stanislav'); //добавил после фидбэка
+            document.cookie = encodeURIComponent('password') + '=' + encodeURIComponent('pass'); //добавил после фидбэка
+            document.cookie = encodeURIComponent('domain') + '=' + encodeURIComponent('localhost'); //добавил после фидбэка
+
             function getCookies() {
                 let end, val, nm;
                 let eql = 0;
