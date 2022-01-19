@@ -281,43 +281,41 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script>
-        {
-            "use strict";
+        "use strict";
 
-            let nodeList = document.querySelectorAll('.social__menu_item img');
-            for (const item of nodeList) {
-                item.addEventListener('mouseover', (e) => {
-                    let id = e.target.id;
-                    if (id == 'vk') {
-                        e.target.src = "http://127.0.0.1:5500/img/vk-pink.png";
-                    }
-                    if (id == 'fb') {
-                        e.target.src = "http://127.0.0.1:5500/img/fb-pink.png";
-                    }
-                    if (id == 'twitter') {
-                        e.target.src = "http://127.0.0.1:5500/img/tw-pink.png";
-                    }
-                    if (id == 'insta') {
-                        e.target.src = "http://127.0.0.1:5500/img/inst-pink.png";
-                    }
-                });
-                item.addEventListener('mouseout', (e) => {
-                    let id = e.target.id;
-                    if (id == 'vk') {
-                        e.target.src = "http://127.0.0.1:5500/img/vk-blue.png";
-                    }
-                    if (id == 'fb') {
-                        e.target.src = "http://127.0.0.1:5500/img/fb-blue.png";
-                    }
-                    if (id == 'twitter') {
-                        e.target.src = "http://127.0.0.1:5500/img/tw-blue.png";
-                    }
-                    if (id == 'insta') {
-                        e.target.src = "http://127.0.0.1:5500/img/inst-blue.png";
-                    }
-                });
-            }
-        }
+        let nodeList = document.querySelectorAll('.social__menu_item img');
+        for (const item of nodeList) {
+            item.addEventListener('mouseover', (e) => {
+                let id = e.target.id;
+                if (id == 'vk') {
+                    e.target.src = "img/vk-pink.png";
+                }
+                if (id == 'fb') {
+                    e.target.src = "img/fb-pink.png";
+                }
+                if (id == 'twitter') {
+                    e.target.src = "img/tw-pink.png";
+                }
+                if (id == 'insta') {
+                    e.target.src = "img/inst-pink.png";
+                }
+            });
+            item.addEventListener('mouseout', (e) => {
+                let id = e.target.id;
+                if (id == 'vk') {
+                    e.target.src = "img/vk-blue.png";
+                }
+                if (id == 'fb') {
+                    e.target.src = "img/fb-blue.png";
+                }
+                if (id == 'twitter') {
+                    e.target.src = "img/tw-blue.png";
+                }
+                if (id == 'insta') {
+                    e.target.src = "img/inst-blue.png";
+                }
+            });
+        }  
     </script>
 </body>
 </html>
