@@ -1,0 +1,25 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+.header__background {
+    background-color: #040440;
+    height: 88px;
+}
+.section1__background {
+    background-image: url(files/фон.png);
+    height: 893px;
+}
+.section2__background {
+    background-color: #040440;
+    height: 685px;
+}
+.section3__background {
+    background-color: #130b5b;
+    height: 807px;
+}
+.footer__background {
+    background-color: #040440;
+    height: 111px;
+}
