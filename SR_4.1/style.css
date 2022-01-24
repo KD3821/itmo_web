@@ -1,25 +1,353 @@
+/*** Подключение шрифтов ***/
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('./fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'HelveticaNeueCyrLight';
+    src: url('./fonts/HelveticaNeueCyr/HelveticaNeueCyr-UltraLight.ttf') format('truetype');
+}
+/*===== Описание стилей разделов сайта =================================================================================================*/
+
 html, body {
     padding: 0;
     margin: 0;
     color: #ffffff;
 }
+/*** HEADER ***/
 .header__background {
     background-color: #040440;
-    height: 88px;
+    height: 92px;
 }
+.header__part {
+    display: flex;
+}
+.header__title {
+    text-transform: uppercase;
+    margin-right: auto;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-top: 22px;
+    margin-left: 103px;
+}
+.header__menu {
+    margin-right: 40px;
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+.header__menu li {
+    margin-left: 90px;
+}
+
+.header__bttn {
+    border-radius: 36.5px;
+    text-transform: uppercase;
+    width: 203px;
+    margin: 7px 85px;
+    height: 53px;
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+    padding-top: 19px;
+    padding-left: 55px;
+}
+/*** SECTION1 ***/
 .section1__background {
     background-image: url(files/фон.png);
-    height: 893px;
+    height: 892px;
 }
+.section1__part1 {
+    padding-top: 178px;
+    padding-left: 356px;
+}
+.section1__title-line {
+    width: 120px;
+    height: 8px;
+}
+.section1__title-info {
+    padding-top: 20px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+.section1__title {
+    margin-top: 90px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fefefe;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.section1__about {
+    font-family: 'HelveticaNeueCyr';
+    margin-bottom: 85px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.section1__bttn {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #fefefe;
+    border-radius: 36.5px;
+    width: 200px;
+    height: 52px;
+    padding-top: 19px;
+    padding-left: 55px;
+}
+.section1__part2 {
+    padding-top: 42px;
+    padding-left: 240px;
+}
+.section1__menu {
+    font-size: 16px;
+    line-height: 1.2;
+    /* font-weight: 300; */
+}
+.section1__menu li {
+    margin-left: 80px;
+}
+.section1__menu  .about {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-top: 10px;
+    text-transform: none;
+}
+/*** SECTION2 ***/
 .section2__background {
     background-color: #040440;
-    height: 685px;
+    height: 684px;
 }
+.section2__wrap {
+    display: flex;
+    align-items: center;
+}
+.section2__part1 {
+    width: 50%;
+    text-align: end;
+    padding-right: 82px;
+    margin-bottom: 230px;
+}
+.section2__part2 {
+    width: 50%;
+    text-align: start;
+    padding-right: 90px;
+    margin-top: 80px;
+}
+.section2__title-line {
+    width: 27px;
+    height: 65px;
+    margin-right: 13px;
+}
+.section2__title {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 1.0px;
+}
+.section2__title-wrap {
+    margin-bottom: 236px;
+    margin-top: 10px;
+
+}
+.section2__about {
+    font-family: 'HelveticaNeueCyrLight';
+    font-size: 30px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-top: 28px;
+    margin-bottom: 36px;
+}
+.section2__about p {
+    padding-bottom: 5px;
+    letter-spacing: 0.65px;
+    
+}
+.section2_about-wrap {
+    margin-top: 7px;
+}
+
+
+/*** SECTION3 ***/
 .section3__background {
     background-color: #130b5b;
-    height: 807px;
+    height: 808px;
 }
+.section3__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 352px;
+    padding-top: 65px;
+    align-content: flex-start;
+}
+.section3__part2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3px;
+}
+.section3__part2 .section3__title {
+    margin-top: 15px;
+}
+.section3__part2 .section3__about {
+    margin-top: -11px;
+    letter-spacing: -0.8px;
+}
+.section3__title-line {
+    width: 8px;
+    height: 65px;
+    margin-right: 5px;
+}
+.section3__title {
+    margin-top: 7px;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+.section3__bttn {
+    height: 117px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 36px;
+    padding-left: 8px;
+    margin-right: 30px;
+    margin-top: 12px;
+    width: 59%;
+}
+.section3__about {
+    font-family: 'HelveticaNeueCyrLight';
+    font-size: 30px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    margin-left: 5px;
+    letter-spacing: 0.65px;
+}
+.section3__part2 .about-wrap {
+    width: 73%;
+}
+.section3__part2 .about-wrap p {
+    margin-right: 70px;
+}
+
+/*** FOOTER ***/
 .footer__background {
     background-color: #040440;
     height: 111px;
+}
+.footer__menu {
+    justify-content: space-evenly;
+    width: 10%;
+    margin-left: 299px;
+}
+.footer__wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 111px;
+    margin-left: -115px;
+}
+.footer__bttn {
+    width: 36px;
+    height: 29px;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 24px;
+    margin-bottom: -15px;
+}
+ .footer__bttn_fb {    /*** модификатор использовал один раз - для кнопки facebook - не увидел где еще можно было ***/
+    text-align: end;
+    font-size: 28px;
+}
+.footer__address, .footer__email, .footer__phone {
+    font-family: 'HelveticaNeueCyrLight';
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #ffffff;
+}
+.contacts__wrap {
+    display: flex;
+    flex-direction: row;
+    width: 58%;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__address {
+    margin-top: 12px;
+}
+.footer__email {
+    margin-right: 100px;
+}
+.footer__phone {
+    margin-right: 225px;
+}
+/*===== Универсальные классы =============================================================================================================*/
+
+/*** MENU ***/
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'HelveticaNeueCyr';
+}
+.menu__item {
+    font-family: 'HelveticaNeueCyr';
+    text-transform: uppercase;
+}
+/*** TITLE ***/
+.title-wrap {
+    display: flex;
+}
+.title {
+    font-family: 'HelveticaNeueCyr';
+}
+.title-line {
+    background-color: #c93555;
+}
+.title-info {
+    font-family: 'HelveticaNeueCyr';
+    color: #c93555;
+}
+/*** ABOUT ***/
+
+.about-wrap {
+    display: flex;
+    flex-direction: column;
+}
+/*** BUTTON ***/
+.bttn {
+    font-family: 'HelveticaNeueCyr';
+    background-color: #c93555;
+}
+.bttn:hover {
+    cursor: pointer;
 }
