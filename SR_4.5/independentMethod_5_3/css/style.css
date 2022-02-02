@@ -1,0 +1,41 @@
+.wrapper {
+  width: 60%;
+  margin: 5% auto 0;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 4%;
+}
+
+h1 {
+  color: #94a2af;
+  font-size: 66px;
+}
+
+h2 {
+  color: #a3aeba;
+  font-size: 56px;
+}
+
+h3 {
+  color: #b1bbc5;
+  font-size: 46px;
+}
+
+h4 {
+  color: #c0c8d0;
+  font-size: 36px;
+}
+
+h5 {
+  color: #ced5db;
+  font-size: 26px;
+}
+
+h6 {
+  color: #dde1e6;
+  font-size: 16px;
+}
