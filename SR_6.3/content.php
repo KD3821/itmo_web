@@ -11,7 +11,7 @@
             </div>
             
             <?php
-                require_once 'form.php';
+                require_once 'form.php'; //загрузка файла с формой критична для продолжения работы
             ?>
             
         </div>
