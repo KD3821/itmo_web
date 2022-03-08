@@ -35,7 +35,8 @@ html, body {
     font-family: 'PlayfairDisplayRegular', sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
+    cursor:default; 
 }
 .header__xs {
     display: none;
@@ -92,7 +93,7 @@ html, body {
     color: #f5fcfd;
 }
 .header__social li:nth-child(1), .footer__social li:nth-child(1) {
-    margin-top: 9px;
+    margin-top: 10px;
 }
 .header__social li:nth-child(1) a, .footer__social li:nth-child(1) a {
     border: 3px solid #a7b9c9;
