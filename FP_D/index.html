@@ -328,7 +328,8 @@
                 let service = "";
                 with(document.forms.order) {
 
-                    if (document.forms.order.userService.value==0 || document.forms.order.userName.value.length==0 || document.forms.order.userEmail.value.indexOf('@')==-1) {
+                    if (document.forms.order.userService.value==0 || document.forms.order.userName.value.length==0 || 
+                        document.forms.order.userEmail.value.indexOf('@')==-1) {
                         if (document.forms.order.userEmail.value.indexOf('@')==-1) {
                             alert("Здравствуйте! Для оформления заявки,\nпожалуйста, укажите корректный email.");
                         } else {
@@ -342,7 +343,11 @@
                             cost = "Cтоимость онлайн-кураторства\nсоставляет 2500 руб/неделя (5 заданий).";
                             service = "Онлайн кураторство";
                         }
-                        confirm("Здравствуйте! Для оформления заявки,\nпожалуйста, ознакомьтесь со стоимостью услуг:\n"+cost+"\nДля оформления подтвердите Ваши данные:\nИмя: "+ document.forms.order.userName.value + "\nEmail: "+ document.forms.order.userEmail.value + "\nУслуга: "+ service);
+                        confirm("Здравствуйте! Для оформления заявки,\nпожалуйста, ознакомьтесь со стоимостью услуг:\n"+cost+
+                            "\nДля оформления подтвердите Ваши данные:\nИмя: "+ document.forms.order.userName.value + "\nEmail: "+
+                            document.forms.order.userEmail.value + "\nУслуга: "+ service);
+                        alert("Уважаемый(-ая) "+ document.forms.order.userName.value +
+                        "!\nБлагодарю Вас за проявленный интерес\nк изучению английского языка со мной.\nВ ближайшее время Вы получите\nподробную информацию о моих услугах\nи дальнейшие инструкции по обучению\nна указанный Вами email.\nSee you soon!");
                     }
                 }
             }
